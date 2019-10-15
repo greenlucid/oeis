@@ -1,4 +1,4 @@
-#Tomás 'Green' Roca Sánchez
+#Tomas 'Green' Roca Sanchez
 #Number of different permutations of length n that possess maximum orderedly contigual distance sum
 #The name of this series is B01 locally and will possess a different name in OEIS
 import itertools
