@@ -32,6 +32,9 @@ def different_maximums(n):
 #There is 1 way to obtain maximum distance sum for all permutations of zero elements: []
 #And there is also 1 way to do the same for all permutations of one element: [1], and thus:
 b01 = [1, 1]
-for i in range(2, 8):
+#Obtain up to the 8th element of the sequence:
+for i in range(2, 9):
 	b01.append(different_maximums(i))
 print(b01)
+#This bruteforcing algorithm has a complexity of O(n!) and as such is simply not manageable
+#for values over 12, hence the scarce selection of elements.
