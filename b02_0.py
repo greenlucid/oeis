@@ -4,7 +4,7 @@
 import math
 
 #the biggest number for which we will search for indexed numbers
-nMax = 1000
+nMax = 500
 
 def divsum(n):
 	"""Returns the sum of all numbers that divide n, except itself."""
