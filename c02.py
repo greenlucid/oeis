@@ -1,10 +1,12 @@
-#Tomas 'Green' Roca Sanchez
-#There is no number whose divisor sum except themselves is equal to the numbers in this series.
+# Tomas 'Green' Roca Sanchez
+# There is no number whose divisor sum except themselves is equal to the numbers in this series.
+# The 'untouchable' numbers, proved to be infinite, and even posess density by Ërdos
+# A005114 in OEIS
 
 import math
 
 #the biggest number for which we will search for indexed numbers
-nMax = 500
+nMax = 300
 
 def divsum(n):
 	"""Returns the sum of all numbers that divide n, except itself."""
@@ -44,7 +46,7 @@ greatList = indexedList(divsumList(nMax**2))
 specialList = []
 for i in range(len(greatList)):
     #print (i,": ",greatList[i])
-    if len(greatList[i])==0:
+    if len(greatList[i])==3:
         specialList.append(i)
 
 print(specialList)
