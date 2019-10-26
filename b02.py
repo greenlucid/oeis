@@ -43,8 +43,8 @@ for i in range(3,1001):
             fact.append(int(st))
     fibf.append(fact)
 
-s_1 = []
-s_2 = []
+s_1 = [0,1]
+s_2 = [0,1]
 s_3 = [0,0,0]
 for i in range(3,len(fibf)-1):
     if len(fibf[i]) == len(fibf[i+1]):
